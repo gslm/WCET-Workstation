@@ -1,0 +1,27 @@
+# Build output
+build/
+*.o
+*.a
+*.so
+*.out
+*.elf
+*.bin
+*.map
+
+# Profiling
+perf.data
+perf.data.old
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Editors / OS
+.vscode/
+*.swp
+*~
+.DS_Store
+
+# Claude Code local settings
+.claude/settings.local.json
