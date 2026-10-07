@@ -34,3 +34,12 @@ Standing rules for collaboration. Apply unless explicitly overridden.
     git add CM7/Core/Src/timing_experiment CM7/CMakeLists.txt CM7/Core/Src/main.c WCET_STM32H755ZI.ioc
     git commit -m "refactor(cm7): move task bodies into Core/Src/timing_experiment"
     ```
+
+12. **Start every command block with a `cd` to the correct folder.** Any command block given to the operator must begin with a `cd` to the folder the commands must run in, using the absolute path on the machine where they will run. The block must work no matter where the terminal currently is. This complements #11 (comment saying where to run).
+
+    ```bash
+    # workstation
+    cd /media/guilhermes/ssd/SME-KC390/WCET-Workstation
+    git add concepts/DICTIONARY.md
+    git commit -m "feat: add WCET terms dictionary"
+    ```
