@@ -17,12 +17,16 @@ Source of truth for in-flight state (see DIRECTIVES.md #6). Last updated: 2026-1
 
 - Theory first, then coding.
 - Platform: this Linux workstation, C. QEMU not used for timing (only `-icount` for instruction counts if needed). OTAWA for static analysis later. MCU boards optional, later.
-- Operator will create the GitHub repo and commit. `AGENTS.md` to be created as we go.
+- Layout: one folder per concept, `concepts/NN-name/` with `NOTES-NN-name.md` (theory + results), C source, `Makefile` (output in ignored `build/`). ASCII histograms in C (no matplotlib/gnuplot on dev laptop).
+- `concepts/DICTIONARY.md`: terms the operator asks to add. Keep sorted alphabetically; each entry: short definition, description for a beginner, example, why it matters for WCET.
+- Repo: github.com/gslm/WCET-Workstation (branch `main`). Operator commits and pushes. `AGENTS.md` to be created as we go.
 
 ## Status
 
-- Done: `DIRECTIVES.md`, `STUDY-PLAN.md` (orientation + concept list), this file.
-- Next: concept 1 (theory note + coding example). Awaiting operator go.
+- Done: `DIRECTIVES.md`, `STUDY-PLAN.md` (orientation + concept list), this file, `.gitignore`. Pushed to `origin/main`.
+- Concept 1 written (`concepts/01-distribution/`), not committed. Awaiting operator review.
+- `concepts/DICTIONARY.md` created with 14 terms, not committed.
+- Next: concept 2 (measuring correctly), after operator go.
 
 ## Resuming on another workstation
 
