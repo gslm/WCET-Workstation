@@ -42,7 +42,7 @@ Goal: learn WCET (Worst-Case Execution Time) core concepts, hardware-agnostic, b
 | # | Concept | Coding example | Status |
 |---|---|---|---|
 | **Foundations** | | | |
-| 1 | Execution time as a distribution: BCET/ACET/WCET, observed max vs bound, safe vs tight | Time one function over many inputs, plot a histogram | Next |
+| 1 | Execution time as a distribution: BCET/ACET/WCET, observed max vs bound, safe vs tight | Time one function over many inputs, plot a histogram | In review |
 | 2 | Measuring correctly: timers, overhead, warm-up, noise | `clock_gettime` vs `rdtsc`, measure an empty region, pinned vs unpinned | Pending |
 | **Paths** | | | |
 | 3 | Control-flow graph, basic blocks, worst-case path | Branchy function where random inputs miss the worst path | Pending |
